@@ -68,7 +68,7 @@ const ProductForm = () => {
     
     return (
         <div className='form-box container'>
-            <h2>Fill the details to create product</h2>
+            <h2>Fill the details to {state?.id ? 'update' : 'create'} product</h2>
             <form
                 method='POST'
                 onSubmit={saveProduct}

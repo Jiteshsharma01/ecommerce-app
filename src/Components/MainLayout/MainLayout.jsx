@@ -1,12 +1,9 @@
 import React, {useState, useEffect, useRef, useCallback} from 'react';
 import { useLocation } from "react-router-dom";
 import useInfiniteScroll from '../../utils/useInfiniteScroll';
-// import './MainLayout.css';
 import ProductCard from '../ProductCard/ProductCard';
 
 const MainLayout = () => {
-    // const [productList, setProductList] = useState([]);
-    // const [loading, setLoading] = useState(false);
     const [limit, setLimit] = useState(10);
     const [skip, setSkip] = useState(0);
 
