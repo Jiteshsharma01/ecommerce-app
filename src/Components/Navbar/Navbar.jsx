@@ -11,9 +11,9 @@ const Navbar = () => {
 
   return (
     <nav className='sidenav'>
-      <div className='s1'>
+      <a href='/' className='s1'>
         <img src={appLogo} alt='logo' className='logo' />
-      </div>
+      </a>
       {/* <div className='searchbar'>
         <input type="text" placeholder="Search for products, and more" className='search' />
         <button>

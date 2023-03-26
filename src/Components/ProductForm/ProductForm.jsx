@@ -67,7 +67,7 @@ const ProductForm = () => {
     };
     
     return (
-        <div className='form-box'>
+        <div className='form-box container'>
             <h2>Fill the details to create product</h2>
             <form
                 method='POST'

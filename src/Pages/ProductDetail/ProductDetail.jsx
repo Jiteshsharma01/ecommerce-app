@@ -35,7 +35,7 @@ const ProductDetail = () => {
     }
 
     return (
-        <div className='product-container'>
+        <div className='product-container container'>
             <div className='product-img'>
                 <img src={state?.thumbnail} alt='apple-img' />
                 <button className='add-cart-btn' onClick={getProduct}>
@@ -45,9 +45,11 @@ const ProductDetail = () => {
                     Add to Cart
                 </button>
             </div>
-            <div className='product-description' >
-                <button className='update-btn' onClick={updateProduct}>Update product</button>
-                <button className='update-btn' onClick={deleteProduct}>Delete product</button>
+            <div className='product-description'>
+                <div className='action-btn'>
+                    <button className='update-btn' onClick={updateProduct}>Update product</button>
+                    <button className='delete-btn' onClick={deleteProduct}>Delete product</button>
+                </div>
                 <div className='category-brand'>
                     <span className='category'>{state?.category}</span>
                     <span className='brand'>{state?.brand}</span>
@@ -55,7 +57,7 @@ const ProductDetail = () => {
                 <h2 className='brand-name'>{state?.title}</h2>
                 <div className='price-discount-box'>
                     <span className='price'>₹ {state?.price}</span>
-                    <span className='discountPercentage'>{state?.discountPercentage}%</span>
+                    {state?.discountPercentage ? <span className='discountPercentage'>{state?.discountPercentage}%</span> : null}
                 </div>
                 <span className='rating'>{state?.rating} ★</span>
                 <p className='availability'>Available in stock {state?.stock}</p>

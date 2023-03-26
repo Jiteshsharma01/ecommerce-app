@@ -36,7 +36,7 @@ const MainLayout = () => {
 
                 })}
             </div>
-            {loading && <div className="loader-container bottom">
+            { <div className="loader-container bottom">
                 <div className="spinner"></div>
             </div>}
             <div>{error && 'Error'}</div>

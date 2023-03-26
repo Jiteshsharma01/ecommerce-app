@@ -1,14 +1,17 @@
 .form-box{
-    width: 90%;
-    margin: 5% auto;
+    margin-top: 3%;
+}
+.form-box h2{
+    margin-bottom: 2%;
 }
 .product-form{
     background: rgba(19, 106, 213, 0.1);
     border-radius: 1em;
-    padding: 1em;
-    width: 75%;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
+    margin: auto;
+    width: 75%;
 }
 .form-control{
     display: flex;

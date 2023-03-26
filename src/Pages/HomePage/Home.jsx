@@ -99,14 +99,14 @@ const Home = () => {
   }
 
   return (
-    <div>
-      <Navbar/>
+    <div className='container'>
+      {/* <Navbar/> */}
       {/* {loading ? (
         <div className="loader-container">
           <div className="spinner"></div>
         </div>
       ) : ( */}
-      <div className='container'>
+      <div className='container1'>
         <button className='add-product-btn' onClick={() => navigate(`/create-product`)}>Add Product</button>
         <h1 className='heading'>Products</h1>
         <MainLayout />
