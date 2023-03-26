@@ -19,18 +19,21 @@ const ProductDetail = () => {
     async function deleteProductApi() {
         let url = `https://dummyjson.com/products/${state.id}`;
         let options = {
-          method: 'DELETE'
+            method: 'DELETE'
         };
         try {
-          let res = await fetch(url, options);
-          return await res.json();
+            let res = await fetch(url, options);
+            return await res.json();
         } catch (error) {
-          console.log(error);
+            console.log(error);
         }
     }
     const deleteProduct = async() => {
         const productsData = await deleteProductApi();
-        console.log('deleteProduct', productsData);
+        // let delProd = [];
+        // delProd.push(state.id);
+        // localStorage.setItem('deletedProducts', JSON.stringify(delProd));
+        console.log('deleteProduct', productsData, localStorage.getItem('deletedProducts'));
         navigate('/Home', {state: productsData});
     }
 

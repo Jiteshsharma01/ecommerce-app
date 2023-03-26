@@ -8,7 +8,6 @@ import Modal from '../../Components/Modal/Modal';
 import './Home.css'
 import appleImg from '../../Assets/apple.jpeg';
 
-
 const ProductForm = (props) => {
   const [state, setState] = useState({
     brand: "",
