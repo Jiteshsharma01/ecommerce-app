@@ -1,18 +1,18 @@
-nav{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    width: 99%;
-    overflow: hidden;
-    background-color: white;
+.sidenav {
+    box-shadow: 1px 0px 9px 0px #726e6e;
+    height: 100%;
     position: fixed;
+    z-index: 1;
     top: 0;
-    z-index: 4;
+    left: 0;
+    overflow-x: hidden;
+    width: 15%;
 }
+
 nav svg{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    margin: 4px 12px;
     cursor: pointer;
 }
 nav svg:hover{
@@ -20,63 +20,28 @@ nav svg:hover{
 }
 nav .s1{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 100px;
 }
-nav img{
-    width: 150px;
+.s1 img{
+    width: 100%;
+    height: 100%;
 }
-nav .searchbar{
-    display: flex;
-    border: none;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    overflow: hidden;
-    padding: 5px;
-    justify-content: space-between;
-}
-nav .searchbar input{
-    border: none;
-    outline: none;
-    width: 370px;
-    font-size: 14px;
-    /* align-items: center; */
-}
-
-nav .searchbar svg{
-    color: var(--col1);
-}
-nav .searchbar svg:hover{
-    background-color: var(--col1);
-    color: white;
-    border-radius: 50px;
-    padding: 5px;
-}
-
-nav .searchbar button{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    color: var(--col1);
-}
-
 nav .s1 .right{
     display: flex;
     justify-content: space-between;
     gap: 10px;
     align-items: center;
+    margin-right: 20px;
 }
 nav .cart{
     position: relative;
-    margin: 0px 20px;
 }
 nav .cart .qty{
     background-color: var(--col1);
     color: white;
     border-radius: 50%;
-   top : -15px;
-   right: -15px;;
+    top : -2px;
+    right: 7px;
     position: absolute;
     width: 25px;
     height: 25px;
@@ -90,20 +55,26 @@ nav .cart .qty{
 
 .nav-items{
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 5px;
     gap: 3%;
-    flex: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 16px;
 }
 .nav-items li{
     list-style: none;
     margin-right: 10px;
 }
-li > a{
+.sidenav a {
+    padding: 6px 8px 6px 16px;
     text-decoration: none;
-    color: black;
     font-size: 1.2rem;
     font-weight: 500;
     cursor: pointer;
+    color: #818181;
+    display: block;
 }
+.sidenav a:hover {
+    color: black;
+}
+
