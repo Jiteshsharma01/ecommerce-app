@@ -6,11 +6,8 @@
 }
 .hamburger-menu{
   position: fixed;
-  top: 0;
   left: 0;
-  height: 90px;
-  background: white;
-  width: 100%;
+  top: 0;
 }
 .hamburger-menu img{
     width: 100px;

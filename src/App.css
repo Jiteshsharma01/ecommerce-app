@@ -21,6 +21,14 @@ button{
 }
 
 @media screen and (max-width: 480px) {
+  .hamburger-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90px;
+    background: white;
+    width: 100%;
+  }
   .product-img > img{
     border-top-right-radius: 10px;
   }
