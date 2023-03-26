@@ -1,0 +1,108 @@
+.heading{
+    margin: 3% 0;
+    text-align: center;
+}
+.container{
+    padding: 0 2%;
+    margin-top: 18vh;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    font-family: montserrat;
+    box-sizing: border-box;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 13px;
+    flex-direction: column;
+    padding: 4%;
+    box-shadow: 4px 3px 12px 0px #7f7a7a;
+    align-items: center;
+    margin-top: 18px;
+    border: 1px solid;
+    transition: transform 100ms;
+}
+.card:hover{
+    transform: scale(1.08);
+}
+.card > img{
+    width: 100%;
+    height: 150px;
+}
+.card .brand-name{
+    text-align: center;
+    margin: 8px 0;
+}
+.card > .price-rate-box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+.card > .description{
+    text-overflow:ellipsis;
+    overflow:hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+.price-rate-box .price{
+    font-size: 1.2rem;
+}
+.price-rate-box .rating{
+    font-size: 14px;
+}
+
+.product-list{
+    padding: 0 5%;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    box-sizing: border-box;
+    margin-bottom: 3%;
+}
+
+.add-product-btn{
+    border: none;
+    border-radius: 4px;
+    background-color: #0b63c7;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    float: right;
+}
+
+/* loader */
+.loader-container {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.loader-container.bottom {
+    bottom: 35%;
+}
+
+.spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: #3d5af1 transparent #3d5af1 transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
