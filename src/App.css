@@ -20,6 +20,35 @@ button{
   cursor: pointer;
 }
 
+@media screen and (max-width: 480px) {
+  .product-img > img{
+    border-top-right-radius: 10px;
+  }
+  .add-cart-btn{
+    border-bottom-right-radius: 10px;
+  }
+  .container{
+    margin-top: 15vh;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .form-control{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5%;
+  }
+  .product-description{
+    width: auto;
+  }
+  .similar-img-box{
+    padding: inherit;
+  }
+  .similar-img{
+    height: 80px;
+    width: 70px;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;

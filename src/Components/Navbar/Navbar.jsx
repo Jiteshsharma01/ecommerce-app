@@ -18,7 +18,7 @@ const Navbar = () => {
       </a>
       <ul className='menu__box'>
         <img src={appLogo} alt='logo' className='logo-img' />
-        <li><a className='menu__item' href='#Home'>Home</a></li>
+        <li><a className='menu__item' href='/'>Home</a></li>
         <li><a className='menu__item' href='#About'>About</a></li>
         <li><a className='menu__item' href='#Team'>Team</a></li>
         <li><a className='menu__item' href='#Contact'>Contact Us</a></li>
